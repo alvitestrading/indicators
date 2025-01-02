@@ -78,7 +78,7 @@
     /* -------- IMAGES -------- */
     .img-centered {
       display: block;
-      margin: 5px auto;
+      margin: 20px auto; /* augmenté pour plus d'espace */
       max-width: 100%;
       border: 1px solid #ddd;
       border-radius: 4px;
@@ -103,6 +103,22 @@
       display: inline-block;
       margin-bottom: 5px;
       color: #333;
+    }
+
+    /* -------- FAQ (ajouté) -------- */
+    .faq-item {
+      background-color: #1a1a1a; 
+      border-radius: 4px;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    .faq-item h3 {
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+      color: #ffcc00; /* par exemple un jaune pour contraster */
+    }
+    .faq-item p {
+      margin-bottom: 0;
     }
 
     /* -------- PURCHASE / CTA -------- */
@@ -159,12 +175,12 @@
   <!-- HERO -->
   <header>
     <h1>La solution ALVITES</h1>
-    <p>Tu veux te lancer en trading mais tu n’as pas le temps de tout apprendre ?
-    <p>Trader ou passer du temps avec ta famille/tes amis ?
-    <p> ➡ Avec les outils ALVITES, tu n’as plus besoin de choisir. Pas besoin de devenir expert.
-Des signaux clairs. Des décisions rapides.
-<p>Un trading simple, sans sacrifier ta vie perso 🚀
-   <p></p> <a href="#purchase" class="btn-cta">Commencer maintenant</a>
+    <p>Tu veux te lancer en trading mais tu n’as pas le temps de tout apprendre ?</p>
+    <p>Trader ou passer du temps avec ta famille/tes amis ?</p>
+    <p>➡ Avec les outils ALVITES, tu n’as plus besoin de choisir. Pas besoin de devenir expert.</p>
+    <p>Des signaux clairs. Des décisions rapides.</p>
+    <p>Un trading simple, sans sacrifier ta vie perso 🚀</p>
+    <a href="#purchase" class="btn-cta">Commencer maintenant</a>
   </header>
 
   <!-- SECTION : Présentation du groupe -->
@@ -172,14 +188,14 @@ Des signaux clairs. Des décisions rapides.
     <h2>Une solution complète clef en main?</h2>
     <p>Sans aucune action de ta part, ces indicateurs te permettront une lecture instantannée, claire et précise:</p>
     <ul style="margin-bottom: 20px;">
-      <li><strong>ALVITES</strong> te donnera la tendance générale</li> <p></p>
-      <li><strong>OPTI</strong> apparaîtra lors de fortes opportunités d'achat</li> <p></p>
-      <li><strong>SUPPORT</strong> affichera les supports les plus solides</li> <p>
-<p>
+      <li><strong>ALVITES</strong> te donnera la tendance générale</li>
+      <p></p>
+      <li><strong>OPTI</strong> apparaîtra lors de fortes opportunités d'achat</li>
+      <p></p>
+      <li><strong>SUPPORT</strong> affichera les supports les plus solides</li>
+      <p></p>
     </ul>
-    </p>
-<p></p>
-    <!-- Exemple d'image (Apple chart) --> <p></p>
+
     <img 
       src="BTC12.png" 
       alt="Exemple de graphique Apple avec l'indicateur Alvites" 
@@ -188,92 +204,122 @@ Des signaux clairs. Des décisions rapides.
   </section>
 
   <!-- SECTION : Explications, captures de gains -->
-  <section> <p></p>
-    <h2>Ton temps a de la valeur, économise-le ! 💡&nbsp</h2> <p>
-    <p>
-    <p>
-       AVANT:
-    <p></p> Je passais 2 heures par jour à chercher des opportunités d’achat dans un fouilli d'indicateurs
-      <p></p>
-  </p>
-  
+  <section>
+    <h2>Ton temps a de la valeur, économise-le ! 💡&nbsp;</h2>
+    <p>AVANT:</p>
+    <p>Je passais 2 heures par jour à chercher des opportunités d’achat dans un fouilli d'indicateurs</p>
 
-   <img 
+    <img 
       src="bok.png" 
       alt="Exemples de configurations TheStrat" 
       class="img-centered"
-    <p>
-    <p></p>
- MAINTENANT :
-       <p> 2 heures par semaine me suffisent grâce à un graphique épuré et des signaux clairs
-  </p>
-  </p>
-<p></p>
-<p></p>
-   <img 
+    >
+
+    <p>MAINTENANT :</p>
+    <p>2 heures par semaine me suffisent grâce à un graphique épuré et des signaux clairs</p>
+
+    <img 
       src="fhj.png" 
       alt="Exemples de configurations TheStrat" 
       class="img-centered"
-    <p>
-<p>
-<p>
+    >
+  </section>
+
   <!-- SECTION : Bonus -->
   <section>
     <h2>Bonus</h2>
     <p>
-      Tu auras également à un accès gratuit au groupe discord ALVITES TRADING où tu rencontreras d'autres passionnés comme toi.
-      C'est un groupe dans lequel j'apporte toute mon expérience en trading (6ans) et où je réponds à toutes vos questions personnellement
-    </p>  </p>
-<p></p>
- 
-<p>
-<p>
+      Tu auras également un accès gratuit au groupe discord ALVITES TRADING où tu rencontreras d'autres passionnés comme toi.
+      C'est un groupe dans lequel j'apporte toute mon expérience en trading (6 ans) et où je réponds à toutes vos questions personnellement.
+    </p>
   </section>
 
   <!-- SECTION : Témoignages / Retours Clients -->
   <section class="testimonials">
     <h2>Ils en parlent</h2>
 
-    <!-- Avis #2 -->
-   <div class="testimonial-item">
-        <img 
-      src="dfb.png" 
-      alt="Exemples de configurations TheStrat" 
-      class="img-centered"
-    <p>
+    <div class="testimonial-item">
+      <img 
+        src="dfb.png" 
+        alt="Exemples de configurations TheStrat" 
+        class="img-centered"
+      >
     </div>
-    <!-- Avis #3 -->
-     <div class="testimonial-item">
-        <img 
-      src="Capture d’écran 2024-10-19 111431.png" 
-      alt="Exemples de configurations TheStrat" 
-      class="img-centered"
-    <p>
+
+    <div class="testimonial-item">
+      <img 
+        src="Capture d’écran 2024-10-19 111431.png" 
+        alt="Exemples de configurations TheStrat" 
+        class="img-centered"
+      >
     </div>
-    <!-- Avis #4 -->
-     <div class="testimonial-item">
-        <img 
-      src="Capture d’écran 2024-10-19 111220.png" 
-      alt="Exemples de configurations TheStrat" 
-      class="img-centered"
-    <p>
+
+    <div class="testimonial-item">
+      <img 
+        src="Capture d’écran 2024-10-19 111220.png" 
+        alt="Exemples de configurations TheStrat" 
+        class="img-centered"
+      >
     </div>
-    <!-- Avis #5 -->
-       <div class="testimonial-item">
-        <img 
-      src="Capture d’écran 2024-10-19 111744.png" 
-      alt="Exemples de configurations TheStrat" 
-      class="img-centered"
-    <p>
+
+    <div class="testimonial-item">
+      <img 
+        src="Capture d’écran 2024-10-19 111744.png" 
+        alt="Exemples de configurations TheStrat" 
+        class="img-centered"
+      >
+    </div>
+  </section>
+
+  <!-- SECTION : FAQ (Nouveau) -->
+  <section>
+    <h2>FAQ</h2>
+
+    <div class="faq-item">
+      <h3>1. Quel est le principe de l’indicateur ALVITES&nbsp;?</h3>
+      <p>
+        L’indicateur ALVITES analyse pour toi les mouvements de marché et
+        affiche des signaux clairs (flèches, alertes, zones) afin que tu
+        puisses prendre des décisions rapides, sans passer des heures
+        devant tes graphiques.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>2. Est-ce adapté aux débutants&nbsp;?</h3>
+      <p>
+        Oui. Même si tu n’as pas de connaissances avancées en trading,
+        l’indicateur fournit déjà beaucoup d’informations. Tu pourras
+        également poser tes questions sur le Discord pour progresser
+        rapidement.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>3. Quelle plateforme recommandes-tu&nbsp;?</h3>
+      <p>
+        L’indicateur est compatible avec TradingView (un outil très
+        populaire). Tu peux donc l’utiliser sur la plupart des marchés
+        (actions, crypto, forex).
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>4. Y a-t-il un suivi ou une mise à jour de l’indicateur&nbsp;?</h3>
+      <p>
+        Oui, nous mettons régulièrement à jour l’indicateur pour
+        l’optimiser et l’adapter aux conditions de marché. Et via le
+        Discord, tu restes informé(e) en temps réel !
+      </p>
     </div>
   </section>
 
   <!-- SECTION : Paiement / CTA Final -->
   <section class="purchase-section" id="purchase">
-    <h2>Plus besoin de gaspiller des heures devant les écrans pour passer à l'action🕒 = 💰</h2>
+    <h2>Plus besoin de gaspiller des heures devant les écrans pour passer à l'action&nbsp;🕒 = 💰</h2>
     <p>
       Pour recevoir immédiatement la solution ALVITES, il te suffit 
-      d’effectuer un paiement unique de <strong>175 €</strong> ci-dessous
+      d’effectuer un paiement unique de <strong>175 €</strong> ci-dessous.
     </p>
     <!-- Lien PayPal -->
     <a href="https://paypal.me/alvitesindicateur?country.x=FR&locale.x=fr_FR" target="_blank" class="btn-pay">
@@ -282,14 +328,12 @@ Des signaux clairs. Des décisions rapides.
     <p style="margin-top: 20px;">
       Ou scanne ce QR Code pour payer directement avec PayPal :
     </p>
-    <!-- QR Code PayPal (à remplacer par le tien) -->
     <img 
-     src="qrcode.png" 
-     alt="Ma capture d'écran"
-     class="img-centered"
-    style="max-width: 200px;">
-    <p>
-      <p>
+      src="qrcode.png" 
+      alt="Ma capture d'écran"
+      class="img-centered"
+      style="max-width: 200px;"
+    >
     <p>À tout de suite de l’autre côté, hâte de te voir arriver parmi nous !</p>
   </section>
 
@@ -299,4 +343,3 @@ Des signaux clairs. Des décisions rapides.
   </footer>
 </body>
 </html>
-
