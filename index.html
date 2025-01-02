@@ -2,9 +2,9 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Indicateur Alvites - Landing Page</title>
+  <title>ALVITES TRADING - Road to Success</title>
   <style>
-    /* Reset basique */
+    /* -------- RESET SIMPLE -------- */
     * {
       margin: 0;
       padding: 0;
@@ -13,277 +13,287 @@
 
     body {
       font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
       line-height: 1.6;
-      background-color: #f4f4f4;
-      color: #333;
     }
 
-    /* Conteneur principal pour limiter la largeur */
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
+    a {
+      color: inherit;
+      text-decoration: none;
     }
 
-    /* Header et Navigation */
+    /* -------- HEADER / HERO -------- */
     header {
-      background-color: #ffffff;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      padding: 10px 0;
-    }
-
-    .nav-brand {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #ff6f61;
-      text-decoration: none;
-    }
-
-    nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    nav a {
-      color: #333;
-      text-decoration: none;
-      margin-left: 20px;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* Section "Hero" (mise en avant) */
-    .hero {
-      background: #ff6f61;
+      background: #cc0000; /* Couleur de fond du "Hero" */
       color: #fff;
-      padding: 60px 0;
+      padding: 60px 20px;
       text-align: center;
     }
-
-    .hero h1 {
-      font-size: 2.5rem;
+    header h1 {
+      font-size: 3rem;
       margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
     }
-
-    .hero p {
+    header p {
       font-size: 1.2rem;
-      margin-bottom: 30px;
-      max-width: 700px;
+      max-width: 800px;
       margin: 0 auto 30px auto;
     }
-
-    .btn {
+    .btn-cta {
       background-color: #fff;
-      color: #ff6f61;
-      border: none;
+      color: #cc0000;
       padding: 15px 30px;
-      font-size: 1.1rem;
+      border-radius: 4px;
       font-weight: bold;
       cursor: pointer;
-      border-radius: 4px;
-      text-decoration: none; /* si c’est un lien */
+      transition: 0.3s ease;
+      display: inline-block;
+    }
+    .btn-cta:hover {
+      opacity: 0.8;
     }
 
-    .btn:hover {
-      opacity: 0.9;
+    /* -------- SECTION -------- */
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
-
-    /* Section "Fonctionnalités" */
-    .features {
-      padding: 50px 0;
-      background-color: #ffffff;
-    }
-
-    .features h2 {
-      text-align: center;
-      margin-bottom: 40px;
+    section h2 {
       font-size: 2rem;
-      color: #333;
+      margin-bottom: 20px;
+      color: #cc0000;
     }
-
-    .feature-items {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
+    section p {
+      margin-bottom: 15px;
     }
-
-    .feature-item {
-      flex: 1 1 250px;
-      background-color: #fafafa;
-      border-radius: 4px;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-
-    .feature-item h3 {
-      color: #ff6f61;
+    .section-subtitle {
+      font-size: 1.2rem;
+      font-weight: bold;
       margin-bottom: 10px;
     }
 
-    .feature-item p {
-      font-size: 0.95rem;
-      line-height: 1.4;
-    }
-
-    /* Section "Captures d'écran" */
-    .screenshots {
-      padding: 50px 0;
-    }
-
-    .screenshots h2 {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    .screenshot-gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-
-    .screenshot-gallery img {
-      max-width: 300px;
-      border: 2px solid #ccc;
+    /* -------- IMAGES -------- */
+    .img-centered {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      border: 1px solid #ddd;
       border-radius: 4px;
     }
 
-    /* Section "Achat" */
-    .purchase {
-      text-align: center;
-      padding: 50px 0;
-      background-color: #ffffff;
+    /* -------- TESTIMONIALS / AVIS -------- */
+    .testimonials {
+      background-color: #fff;
+      border-radius: 4px;
+      padding: 20px;
+      margin-top: 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-
-    .purchase h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
+    .testimonial-item {
+      background: #f5f5f5;
+      margin-bottom: 15px;
+      padding: 10px;
+      border-radius: 4px;
+      font-style: italic;
+    }
+    .testimonial-item strong {
+      display: inline-block;
+      margin-bottom: 5px;
       color: #333;
     }
 
-    .purchase p {
-      font-size: 1rem;
-      margin-bottom: 30px;
+    /* -------- PURCHASE / CTA -------- */
+    .purchase-section {
+      text-align: center;
+      background-color: #fff;
+      padding: 40px 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
+      border-radius: 4px;
+    }
+    .purchase-section h2 {
+      margin-bottom: 20px;
+    }
+    .purchase-section p {
+      margin-bottom: 20px;
+    }
+    .purchase-section .btn-pay {
+      background-color: #0070ba; /* Couleur PayPal */
+      color: #fff;
+      padding: 15px 30px;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+      display: inline-block;
+    }
+    .purchase-section .btn-pay:hover {
+      background-color: #005d94;
     }
 
-    /* Footer */
+    /* -------- FOOTER -------- */
     footer {
-      background: #333;
+      background-color: #333;
       color: #ccc;
       text-align: center;
-      padding: 20px 0;
+      padding: 20px;
       margin-top: 40px;
     }
-
     footer p {
       font-size: 0.9rem;
     }
 
-    /* Responsive */
+    /* -------- MEDIA QUERIES (Mobile) -------- */
     @media (max-width: 768px) {
-      .feature-items, .screenshot-gallery {
-        flex-direction: column;
+      header h1 {
+        font-size: 2rem;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- HEADER -->
+  <!-- HERO -->
   <header>
-    <div class="container">
-      <nav>
-        <a href="#" class="nav-brand">Indicateur Alvites</a>
-        <div>
-          <a href="#features">Fonctionnalités</a>
-          <a href="#screenshots">Captures</a>
-          <a href="#purchase">Acheter</a>
-        </div>
-      </nav>
-    </div>
+    <h1>Road to Success</h1>
+    <p>Le groupe ALVITES TRADING : Rejoins une communauté de traders et d’investisseurs prêts à booster leurs résultats grâce à l’indicateur ALVITES et aux stratégies TheStrat !</p>
+    <a href="#purchase" class="btn-cta">Rejoindre maintenant</a>
   </header>
 
-  <!-- HERO / INTRO -->
-  <section class="hero">
-    <div class="container">
-      <h1>Indicateur Alvites</h1>
-      <p>
-        Découvrez comment notre indicateur révolutionnaire peut vous aider à analyser 
-        le marché et à prendre des décisions de trading plus éclairées.
-      </p>
-      <a href="#purchase" class="btn">Obtenir l'indicateur</a>
+  <!-- SECTION : Présentation du groupe -->
+  <section>
+    <h2>Le groupe ALVITES TRADING, c’est quoi&nbsp;?</h2>
+    <p>Une communauté d’investisseurs et de traders réunis autour de deux piliers&nbsp;:</p>
+    <ul style="margin-bottom: 20px;">
+      <li>L’indicateur <strong>ALVITES</strong></li>
+      <li>Les stratégies d’investissement issues des US, appelées <strong>TheStrat</strong></li>
+    </ul>
+    <p>
+      Ces deux outils te permettront d’entrer en position dans des zones de prix 
+      où le risque est faible et où les probabilités de gains peuvent être énormes.
+    </p>
+
+    <!-- Exemple d'image (Apple chart) -->
+    <img 
+      src="https://via.placeholder.com/600x300.png" 
+      alt="Exemple de graphique Apple avec l'indicateur Alvites" 
+      class="img-centered"
+    >
+  </section>
+
+  <!-- SECTION : Explications, captures de gains -->
+  <section>
+    <h2>Pourquoi rejoindre ALVITES TRADING&nbsp;?</h2>
+    <p class="section-subtitle">1. L’indicateur ALVITES</p>
+    <p>
+      Il te facilite la vie en t’apportant des signaux clairs pour repérer des 
+      opportunités de trading à fort potentiel. Que tu fasses du stock-picking, 
+      du DCA sur BTC, de l’investissement sur ETF ou du trading de court terme, 
+      ton trading ne pourra que passer à une vitesse supérieure.
+    </p>
+
+    <p class="section-subtitle">2. Les stratégies TheStrat</p>
+    <p>
+      Je mets à ta disposition des screener, stratégies uniques et modes d’emploi 
+      pour détecter des patterns très précis (chandelier 1, combos 3-2D, etc.). 
+      Tu verras comment combiner ces setups pour cibler des gains réguliers.
+    </p>
+
+    <!-- Exemple d'image (TheStrat combos) -->
+    <img 
+      src="https://via.placeholder.com/600x400.png" 
+      alt="Exemples de configurations TheStrat" 
+      class="img-centered"
+    >
+
+    <p class="section-subtitle">3. Des résultats concrets</p>
+    <p>
+      Découvre des retours et des exemples de gains réalisés grâce aux pronostics 
+      partagés dans le groupe. Ce sont déjà une centaine d’euros qui ont été 
+      gagnés depuis le début, rien qu’en suivant les publications et les signaux 
+      de l’indicateur ALVITES.
+    </p>
+
+    <!-- Exemple d'image (Screenshot Gains) -->
+    <img 
+      src="https://via.placeholder.com/450x500.png"
+      alt="Capture d'écran de gains sur Paris SG"
+      class="img-centered"
+    >
+  </section>
+
+  <!-- SECTION : Bonus -->
+  <section>
+    <h2>Bonus</h2>
+    <p>
+      Je mets également à disposition un <strong>salon dédié au day trading/scalping</strong> 
+      avec un trader extérieur aux résultats énormes depuis plusieurs années : 
+      il partage quotidiennement ses astuces, et explique en détail ses choix de trades.
+    </p>
+  </section>
+
+  <!-- SECTION : Témoignages / Retours Clients -->
+  <section class="testimonials">
+    <h2>Ils en parlent</h2>
+
+    <!-- Avis #1 -->
+    <div class="testimonial-item">
+      <strong>05/10/2024 18:59 - M...</strong>
+      <p>“Bonjour Mickael, groupe intéressant, on s'en les passionnés, j'apprends chaque semaine. L'indicateur est super, je bouffe du graph quotidiennement ahah.”</p>
+    </div>
+    <!-- Avis #2 -->
+    <div class="testimonial-item">
+      <strong>08/10/2024 20:31 - G...</strong>
+      <p>“Salut ! Oui je suis très content d’être avec vous ! Je n’interviens pas car je suis discret mais je lis tous vos messages 😅”</p>
+    </div>
+    <!-- Avis #3 -->
+    <div class="testimonial-item">
+      <strong>23/09/2024 10:13 - X...</strong>
+      <p>“Le groupe est agréable à lire ! Le domaine du trading m’intéresse de + en +. Être aidé par un groupe et un indicateur qui peaufine mes graphs est un énorme bénéfice.”</p>
+    </div>
+    <!-- Avis #4 -->
+    <div class="testimonial-item">
+      <strong>06/10/2024 08:39 - Y...</strong>
+      <p>“Je suis très content de faire partie du groupe, les contenus sont riches mais j’ai pas encore tout lu. Merci !”</p>
+    </div>
+    <!-- Avis #5 -->
+    <div class="testimonial-item">
+      <strong>23/09/2024 16:08 - Z...</strong>
+      <p>“Le groupe est super et l’indicateur très utile !”</p>
     </div>
   </section>
 
-  <!-- FONCTIONNALITÉS -->
-  <section class="features" id="features">
-    <div class="container">
-      <h2>Pourquoi choisir Alvites&nbsp;?</h2>
-      <div class="feature-items">
-        <div class="feature-item">
-          <h3>Analyse en temps réel</h3>
-          <p>
-            Suivez l’évolution du marché en direct et repérez instantanément les 
-            signaux d’achat et de vente potentiels.
-          </p>
-        </div>
-        <div class="feature-item">
-          <h3>Adapté à tous</h3>
-          <p>
-            Que vous soyez débutant ou trader expérimenté, notre indicateur offre 
-            une interface et des réglages simples à prendre en main.
-          </p>
-        </div>
-        <div class="feature-item">
-          <h3>Support et mises à jour</h3>
-          <p>
-            Profitez d’un support réactif et de mises à jour régulières pour rester 
-            à jour avec les dernières évolutions du marché.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CAPTURES D'ÉCRAN -->
-  <section class="screenshots" id="screenshots">
-    <div class="container">
-      <h2>Captures d'écran</h2>
-      <p style="text-align: center; margin-bottom: 30px;">
-        Voici quelques aperçus de l'interface et des signaux générés par Alvites.
-      </p>
-      <div class="screenshot-gallery">
-        <!-- Remplace les src par tes propres liens d’image -->
-        <img src="https://via.placeholder.com/300x200" alt="Capture d'écran 1">
-        <img src="https://via.placeholder.com/300x200" alt="Capture d'écran 2">
-        <img src="https://via.placeholder.com/300x200" alt="Capture d'écran 3">
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION D'ACHAT -->
-  <section class="purchase" id="purchase">
-    <div class="container">
-      <h2>Obtenir l'indicateur Alvites</h2>
-      <p>
-        Passez à l’action dès aujourd’hui&nbsp;! Payez en toute sécurité via notre passerelle 
-        de paiement, et recevez l’indicateur instantanément après votre achat.
-      </p>
-      <!-- Remplace le lien "#" par le vrai lien de paiement -->
-      <a href="https://paypal.me/alvitesindicateur?country.x=FR&locale.x=fr_FR" target="_blank" class="btn">Acheter maintenant</a>
-    </div>
+  <!-- SECTION : Paiement / CTA Final -->
+  <section class="purchase-section" id="purchase">
+    <h2>Rejoins le groupe ALVITES TRADING</h2>
+    <p>
+      Pour intégrer immédiatement le groupe ALVITES TRADING, il te suffit 
+      d’effectuer un paiement unique de <strong>175 €</strong> via le lien ci-dessous.
+    </p>
+    <!-- Lien PayPal -->
+    <a href="https://www.paypal.com/ton-lien-de-paiement" target="_blank" class="btn-pay">
+      Payer 175 € et Rejoindre
+    </a>
+    <p style="margin-top: 20px;">
+      Ou scanne ce QR Code pour payer directement avec PayPal :
+    </p>
+    <!-- QR Code PayPal (à remplacer par le tien) -->
+    <img 
+      src="https://via.placeholder.com/200x200.png" 
+      alt="QR Code de paiement PayPal" 
+      class="img-centered"
+      style="max-width: 200px;"
+    >
+    <p>À tout de suite de l’autre côté, hâte de te voir arriver parmi nous !</p>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>&copy; 2023 Indicateur Alvites. Tous droits réservés.</p>
+    <p>&copy; 2024 Alvites Trading. Tous droits réservés.</p>
   </footer>
-
 </body>
 </html>
 
