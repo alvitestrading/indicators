@@ -2,55 +2,288 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Ma Landing Page</title>
+  <title>Indicateur Alvites - Landing Page</title>
   <style>
-    body {
+    /* Reset basique */
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
     }
+
+    /* Conteneur principal pour limiter la largeur */
     .container {
-      max-width: 600px;
-      margin: 40px auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
     }
-    h1, h2, p {
-      margin-bottom: 15px;
+
+    /* Header et Navigation */
+    header {
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 10px 0;
     }
-    button {
-      background-color: #ff6f61;
+
+    .nav-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ff6f61;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Section "Hero" (mise en avant) */
+    .hero {
+      background: #ff6f61;
       color: #fff;
-      border: none;
-      padding: 15px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 1rem;
+      padding: 60px 0;
+      text-align: center;
     }
-    button:hover {
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      max-width: 700px;
+      margin: 0 auto 30px auto;
+    }
+
+    .btn {
+      background-color: #fff;
+      color: #ff6f61;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 4px;
+      text-decoration: none; /* si c’est un lien */
+    }
+
+    .btn:hover {
       opacity: 0.9;
     }
-    .cta {
+
+    /* Section "Fonctionnalités" */
+    .features {
+      padding: 50px 0;
+      background-color: #ffffff;
+    }
+
+    .features h2 {
       text-align: center;
-      margin-top: 20px;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      color: #333;
+    }
+
+    .feature-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .feature-item {
+      flex: 1 1 250px;
+      background-color: #fafafa;
+      border-radius: 4px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .feature-item h3 {
+      color: #ff6f61;
+      margin-bottom: 10px;
+    }
+
+    .feature-item p {
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    /* Section "Captures d'écran" */
+    .screenshots {
+      padding: 50px 0;
+    }
+
+    .screenshots h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .screenshot-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .screenshot-gallery img {
+      max-width: 300px;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+    }
+
+    /* Section "Achat" */
+    .purchase {
+      text-align: center;
+      padding: 50px 0;
+      background-color: #ffffff;
+    }
+
+    .purchase h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .purchase p {
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: #ccc;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .feature-items, .screenshot-gallery {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Mon Produit Fantastique</h1>
-    <h2>Découvre un produit qui va changer ta vie !</h2>
-    <p>
-      Grâce à ce produit révolutionnaire, tu vas pouvoir gagner du temps, de l'argent 
-      et de l'énergie au quotidien. En plus, il est facile à prendre en main et son 
-      efficacité est garantie.
-    </p>
-    <div class="cta">
-      <button>Je veux en savoir plus</button>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#" class="nav-brand">Indicateur Alvites</a>
+        <div>
+          <a href="#features">Fonctionnalités</a>
+          <a href="#screenshots">Captures</a>
+          <a href="#purchase">Acheter</a>
+        </div>
+      </nav>
     </div>
-  </div>
+  </header>
+
+  <!-- HERO / INTRO -->
+  <section class="hero">
+    <div class="container">
+      <h1>Indicateur Alvites</h1>
+      <p>
+        Découvrez comment notre indicateur révolutionnaire peut vous aider à analyser 
+        le marché et à prendre des décisions de trading plus éclairées.
+      </p>
+      <a href="#purchase" class="btn">Obtenir l'indicateur</a>
+    </div>
+  </section>
+
+  <!-- FONCTIONNALITÉS -->
+  <section class="features" id="features">
+    <div class="container">
+      <h2>Pourquoi choisir Alvites&nbsp;?</h2>
+      <div class="feature-items">
+        <div class="feature-item">
+          <h3>Analyse en temps réel</h3>
+          <p>
+            Suivez l’évolution du marché en direct et repérez instantanément les 
+            signaux d’achat et de vente potentiels.
+          </p>
+        </div>
+        <div class="feature-item">
+          <h3>Adapté à tous</h3>
+          <p>
+            Que vous soyez débutant ou trader expérimenté, notre indicateur offre 
+            une interface et des réglages simples à prendre en main.
+          </p>
+        </div>
+        <div class="feature-item">
+          <h3>Support et mises à jour</h3>
+          <p>
+            Profitez d’un support réactif et de mises à jour régulières pour rester 
+            à jour avec les dernières évolutions du marché.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPTURES D'ÉCRAN -->
+  <section class="screenshots" id="screenshots">
+    <div class="container">
+      <h2>Captures d'écran</h2>
+      <p style="text-align: center; margin-bottom: 30px;">
+        Voici quelques aperçus de l'interface et des signaux générés par Alvites.
+      </p>
+      <div class="screenshot-gallery">
+        <!-- Remplace les src par tes propres liens d’image -->
+        <img src="https://via.placeholder.com/300x200" alt="Capture d'écran 1">
+        <img src="https://via.placeholder.com/300x200" alt="Capture d'écran 2">
+        <img src="https://via.placeholder.com/300x200" alt="Capture d'écran 3">
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION D'ACHAT -->
+  <section class="purchase" id="purchase">
+    <div class="container">
+      <h2>Obtenir l'indicateur Alvites</h2>
+      <p>
+        Passez à l’action dès aujourd’hui&nbsp;! Payez en toute sécurité via notre passerelle 
+        de paiement, et recevez l’indicateur instantanément après votre achat.
+      </p>
+      <!-- Remplace le lien "#" par le vrai lien de paiement -->
+      <a href="https://paypal.me/alvitesindicateur?country.x=FR&locale.x=fr_FR" target="_blank" class="btn">Acheter maintenant</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2023 Indicateur Alvites. Tous droits réservés.</p>
+  </footer>
+
 </body>
 </html>
+
