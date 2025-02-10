@@ -269,10 +269,15 @@
 
   .image-content {
     text-align: center; /* Centre l’image sous le texte */
+    margin-left: 0; /* Supprime la marge qui pousse l'image à droite */
+    width: 100%; /* Assure que le conteneur occupe toute la largeur */
   }
 
   .image-content img {
     max-width: 90%; /* Ajuste la taille des images pour qu'elles ne débordent pas */
+    height: auto;
+    display: block; /* Évite les espaces blancs sous l'image */
+    margin: 0 auto; /* Centre l'image horizontalement */
   }
 }
   </style>
