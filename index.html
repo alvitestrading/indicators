@@ -103,7 +103,7 @@
     /* -------- IMAGES -------- */
     .img-centered {
       display: block;
-      margin: 20px auto; /* augmenté pour plus d'espace */
+      margin: 20px auto; /* augmenté pour plus dpace */
       max-width: 100%;
       border: 1px solid #ddd;
       border-radius: 4px;
@@ -117,6 +117,53 @@
       border-radius: 4px;
     }
 
+    
+/* -------- SECTION AVEC TEXTE ET IMAGE EN COLONNES -------- */
+.content-section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;            /* Aligne verticalement */
+  justify-content: space-between; /* Espace entre le texte et l'image */
+  gap: 40px;                      /* Espace entre les colonnes */
+  margin-bottom: 40px;            /* Sépare les différentes lignes de contenu */
+}
+
+.text-content {
+  flex: 1;                        /* Occupe l'espace disponible */
+  max-width: 50%;                 /* Limite la largeur à 50% */
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.image-content {
+  flex: 1;                        /* Occupe l'espace disponible */
+  display: flex;
+  justify-content: center;        /* Centre l'image horizontalement */
+}
+
+.image-content img {
+  max-width: 100%;                /* L'image ne dépasse pas son conteneur */
+  height: auto;                   /* Conserve ses proportions */
+  border-radius: 8px;
+}
+
+/* -------- RESPONSIVE (adaptation mobile) -------- */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .text-content,
+  .image-content {
+    max-width: 100%;
+  }
+}
     /* -------- TESTIMONIALS / AVIS -------- */
     .testimonials {
       background-color: #000;
