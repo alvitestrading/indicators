@@ -127,23 +127,23 @@
 .container {
   display: flex;
   align-items: center;            /* Aligne verticalement */
-  gap: 60px;                      /* Espace entre les colonnes */
+  gap: space-between;                     /* Espace entre les colonnes */
   margin-bottom: 40px;            /* Sépare les différentes lignes de contenu */
 }
 
 .text-content {
-  flex: 1;                        /* Occupe l'espace disponible */
-  max-width: 45%;                 /* Limite la largeur à 50% */
-  font-size: 1.3rem;
-  line-height: 1.5;
+ width: 45%;                 /* Limite la largeur à 50% */
   text-align: left;
 }
 
+.text-content h2 {
+  font-size: 2rem;         /* ajustez cette valeur selon vos préférences */
+  margin-bottom: 20px;
+}
+
 .image-content {
-  flex: 1.2;                        /* Occupe l'espace disponible */
-  display: flex;
-  margin-left: auto;
-  justify-content: flex-end;        /* Centre l'image horizontalement */
+  width: 45%;              /* occupe environ 45% du conteneur */
+  text-align: right;       /* aligne le contenu à droite */
 }
 
 .image-content img {
@@ -267,7 +267,7 @@
   <!-- Ligne pour "AVANT" -->
   <div class="container">
     <div class="text-content">
-      <p><strong>Maximise ton temps</strong></p>
+      <h2><strong>Maximise ton temps</strong></h2>
       <p>
         Finies les longues heures d'analyse sur un fouilli d'indicateurs contradictoires, retardés et complexes.
       </p>
@@ -280,7 +280,7 @@
   <!-- Ligne pour "MAINTENANT" -->
   <div class="container">
     <div class="text-content">
-      <p><strong>Saisi les meilleures opportunités</strong></p>
+      <h2><strong>Saisi les meilleures opportunités</strong></h2>
       <p>
         Prends en main des outils de visualisation intuitifs et simples mêmes pour les débutants
       </p>
