@@ -12,6 +12,7 @@
 </script>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ALVITES INVEST - Road to Success</title>
   <style>
     /* -------- RESET SIMPLE -------- */
@@ -252,10 +253,28 @@
 
     /* -------- MEDIA QUERIES (Mobile) -------- */
     @media (max-width: 768px) {
-      header h1 {
-        font-size: 1rem;
-      }
-    }
+     header h1 {
+    font-size: 2rem; /* Réduit le titre principal sur mobile */
+  }
+
+  section h2 {
+    font-size: 1.8rem; /* Ajuste les titres pour qu'ils ne soient pas trop grands */
+  }
+
+  .text-content {
+    width: 100%; /* Évite que le texte soit trop étroit */
+    text-align: center; /* Centre le texte sur mobile */
+    margin-right: 0; /* Supprime la marge excessive */
+  }
+
+  .image-content {
+    text-align: center; /* Centre l’image sous le texte */
+  }
+
+  .image-content img {
+    max-width: 90%; /* Ajuste la taille des images pour qu'elles ne débordent pas */
+  }
+}
   </style>
 </head>
 <body>
