@@ -78,7 +78,48 @@
     .btn-cta:hover {
       opacity: 0.8;
     }
+/* -------- SECTION AVEC IMAGE ET TEXTE -------- */
+.content-section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 20px;
+}
 
+.container {
+  display: flex;
+  align-items: center; /* Aligne les éléments verticalement */
+  justify-content: space-between; /* Espacement max entre texte et image */
+  gap: 40px; /* Espace entre texte et image */
+}
+
+/* -------- TEXTE À GAUCHE -------- */
+.text-content {
+  max-width: 50%; /* Évite que le texte prenne trop de place */
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* -------- IMAGE À DROITE -------- */
+.image-content img {
+  max-width: 100%; /* Empêche l'image de dépasser */
+  height: auto;
+  border-radius: 8px;
+}
+
+/* -------- RESPONSIVE POUR MOBILE -------- */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Passe en colonne sur mobile */
+    text-align: center; /* Centre le texte */
+  }
+
+  .text-content {
+    max-width: 100%; /* Texte prend toute la largeur sur mobile */
+  }
+
+  .image-content img {
+    max-width: 90%; /* Réduit un peu l'image sur mobile */
+  }
     /* -------- SECTION -------- */
     section {
       max-width: 1000px;
@@ -216,21 +257,27 @@
 </header>
 
   <!-- SECTION : Présentation du groupe -->
-  <section>
-      <li><strong>ALVITES</strong> t'indique de façon claire s'il est judicieux d'investir ton argent</li>
-      <p></p>
-      <li><strong>OPTI</strong> te donne des fenêtres d'achats très précises à ne pas rater</li>
-      <p></p>
-      <li><strong>SUPPORT</strong> affiche les supports proches les plus solides pour maximiser tes gains</li>
-      <p></p>
-    </ul>
+<section class="content-section">
+  <div class="container">
+    <!-- Bloc de texte -->
+    <div class="text-content">
+      <ul>
+        <li><strong>ALVITES</strong> t'indique de façon claire s'il est judicieux d'investir ton argent</li>
+        <li><strong>OPTI</strong> te donne des fenêtres d'achats très précises à ne pas rater</li>
+        <li><strong>SUPPORT</strong> affiche les supports proches les plus solides pour maximiser tes gains</li>
+      </ul>
+    </div>
+    
+    <!-- Bloc image -->
+    <div class="image-content">
+      <img 
+        src="Capture d’écran 2025-01-14 174848.png" 
+        alt="Exemple de graphique Apple avec l'indicateur Alvites" 
+      >
+    </div>
+  </div>
+</section>
 
-    <img 
-      src="Capture d’écran 2025-01-14 174848.png" 
-      alt="Exemple de graphique Apple avec l'indicateur Alvites" 
-      class="img-centered"
-    >
-  </section>
 
   <!-- SECTION : Explications, captures de gains -->
   <section>
