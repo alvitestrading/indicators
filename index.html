@@ -127,23 +127,26 @@
 .container {
   display: flex;
   align-items: center;            /* Aligne verticalement */
-  gap: space-between;                     /* Espace entre les colonnes */
+  justify-content: space-between;                     /* Espace entre les colonnes */
   margin-bottom: 40px;            /* Sépare les différentes lignes de contenu */
 }
 
 .text-content {
  width: 45%;                 /* Limite la largeur à 50% */
-  text-align: left;
+ text-align: left;
+ margin-right: 20px;
 }
 
 .text-content h2 {
   font-size: 2rem;         /* ajustez cette valeur selon vos préférences */
   margin-bottom: 20px;
+  color: #fff;
 }
 
 .image-content {
   width: 45%;              /* occupe environ 45% du conteneur */
-  text-align: right;       /* aligne le contenu à droite */
+  text-align: right; 
+  margin-left: 20px;
 }
 
 .image-content img {
