@@ -215,59 +215,6 @@
   <a href="#purchase" class="btn-cta">Commencer maintenant</a>
 </header>
 
-/* -------- SECTION AVEC IMAGE ET TEXTE -------- */
-.content-section {
-  max-width: 1000px;
-  margin: 60px auto;
-  padding: 20px;
-}
-
-.container {
-  display: flex;
-  align-items: center; /* Alignement vertical */
-  justify-content: space-between; /* Séparation entre le texte et l'image */
-  width: 100%; /* Prend toute la largeur */
-  gap: 40px; /* Ajoute de l'espace entre le texte et l'image */
-}
-
-/* -------- TEXTE À GAUCHE -------- */
-.text-content {
-  flex: 1; /* Prend l'espace disponible */
-  max-width: 50%; /* Pour éviter que le texte ne soit trop étalé */
-  font-size: 1.2rem;
-  line-height: 1.5;
-  text-align: left; /* Alignement du texte */
-}
-
-/* -------- IMAGE À DROITE -------- */
-.image-content {
-  flex: 1; /* Prend l'espace disponible */
-  display: flex;
-  justify-content: center; /* Centre l’image horizontalement */
-}
-
-.image-content img {
-  max-width: 90%; /* Ajuste la taille de l'image */
-  height: auto;
-  border-radius: 8px;
-}
-
-/* -------- RESPONSIVE POUR MOBILE -------- */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column; /* Passe en colonne sur mobile */
-    text-align: center; /* Centre le texte */
-  }
-
-  .text-content {
-    max-width: 100%; /* Le texte prend toute la largeur sur mobile */
-    text-align: center; /* Centre le texte */
-  }
-
-  .image-content img {
-    max-width: 90%; /* Réduit un peu l'image sur mobile */
-  }
-}
 
   <!-- SECTION : Explications, captures de gains -->
   <section>
