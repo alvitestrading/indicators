@@ -234,6 +234,25 @@
       transition: 0.3s ease;
       display: inline-block;
     }
+/* Centrage du bouton PayPal sur desktop */
+#paypal-container-H9NG4LE9SGSSW {
+  display: flex;
+  justify-content: center; /* Centre le bouton horizontalement */
+  align-items: center; /* Assure un bon alignement vertical */
+  width: 100%; /* Le conteneur prend toute la largeur */
+  margin: 0 auto; /* Centre le conteneur */
+}
+
+/* Ajustement pour la section de paiement */
+.purchase-section {
+  text-align: center; /* Centre tous les éléments de la section */
+}
+
+/* Ajustement pour éviter les débordements sur mobile */
+@media (max-width: 768px) {
+  #paypal-container-H9NG4LE9SGSSW {
+    width: 100%; /* Assure un bon ajustement sur mobile */
+  }
     .purchase-section .btn-pay:hover {
       background-color: #005d94;
     }
