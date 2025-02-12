@@ -103,29 +103,24 @@
     }
 
 .tools-list {
-  list-style: none;         /* Supprime les puces par défaut */
+  list-style: none;        /* Supprime les puces par défaut */
   padding: 0;
-  margin: 0 auto;           /* Centre la liste en bloc */
-  display: inline-block;    /* La largeur s'adapte au contenu */
-  text-align: center;       /* Centre le contenu des éléments, au cas où */
+  margin: 0 auto;          /* Centre la liste */
+  display: inline-block;   /* La largeur s'ajuste au contenu */
 }
 
 .tools-list li {
-  display: flex;            /* Utilisation de flexbox pour centrer le contenu */
-  align-items: center;      /* Centre verticalement */
-  justify-content: center;  /* Centre horizontalement */
-  font-size: 1.2rem;        /* Même taille que le paragraphe "Quelques minutes..." */
-  margin-bottom: 0.5em;     /* Optionnel : espace entre les items */
-  position: relative;       /* Pour positionner éventuellement le pseudo-élément */
+  display: flex;                   /* Flexbox pour aligner les éléments */
+  justify-content: center;         /* Centre horizontalement la ligne */
+  align-items: center;             /* Centre verticalement */
+  font-size: 1.2rem;               /* Même taille que le paragraphe */
+  margin-bottom: 0.5em;            /* Espacement entre les items */
 }
 
-/* Ajout d'un pseudo-élément pour simuler la puce */
-.tools-list li::before {
-  content: "•";             /* Caractère puce */
-  margin-right: 0.5em;      /* Espace entre la puce et le texte */
-  font-size: 1.2rem;        /* Même taille que le texte */
-  display: inline-block;
+.tools-list .bullet {
+  margin-right: 0.5em;             /* Espace entre la puce et le texte */
 }
+
 
 
     /* -------- IMAGES -------- */
@@ -258,11 +253,21 @@
     <p style="margin-bottom: 40px;">
     Quelques minutes par jour me suffisent, je ne trade que des actifs de qualité et uniquement à des moments pertinents grâce à ces trois outils:
     </p>
-    <ul class="tools-list">
-  <li>ALVITES qui m'indique de façon claire s'il est judicieux d'investir mon argent</li>
-  <li>OPTI qui me donne des fenêtres d'achats très précises à ne pas rater</li>
-  <li>SUPPORT qui m'affiche les supports proches les plus solides pour maximiser tes gains</li>
+<ul class="tools-list">
+  <li>
+    <span class="bullet">•</span>
+    <span class="text">ALVITES qui t'indique de façon claire s'il est judicieux d'investir ton argent</span>
+  </li>
+  <li>
+    <span class="bullet">•</span>
+    <span class="text">OPTI qui te donne des fenêtres d'achats très précises à ne pas rater</span>
+  </li>
+  <li>
+    <span class="bullet">•</span>
+    <span class="text">SUPPORT qui affiche les supports proches les plus solides pour maximiser tes gains</span>
+  </li>
 </ul>
+
     <img 
       src="Capture d’écran 2025-01-14 174848.png" 
       alt="Exemples de configurations TheStrat" 
