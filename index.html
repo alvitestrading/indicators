@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-79R1LDSQXD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-79R1LDSQXD');
-</script>
-<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-79R1LDSQXD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-79R1LDSQXD');
+  </script>
   <meta charset="UTF-8">
   <title>ALVITES INVEST - Road to Success</title>
   <style>
@@ -20,31 +18,28 @@
       padding: 0;
       box-sizing: border-box;
     }
-
     body {
       font-family: Arial, sans-serif;
       background-color: #000000;
       color: #FFFFFF;
       line-height: 1.6;
     }
-
     a {
       color: inherit;
       text-decoration: none;
     }
-  .logo {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  font-size: 1rem;
-  opacity: 0.9;
-  color: #FFFFFF; /* Texte blanc */
-  letter-spacing: 2px;
-}
-
- /* -------- HEADER / HERO -------- */
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 1rem;
+      opacity: 0.9;
+      color: #FFFFFF;
+      letter-spacing: 2px;
+    }
+    /* -------- HEADER / HERO -------- */
     header {
-      background: #000000; /* Couleur de fond du "Hero" */
+      background: #000000;
       color: #FFFFFF;
       padding: 60px 20px;
       text-align: center;
@@ -52,7 +47,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh; /* Prend toute la hauteur de l'écran */
+      height: 100vh;
     }
     header h1 {
       font-size: 2.9rem;
@@ -62,12 +57,12 @@
     }
     header p {
       font-size: 1.2rem;
-      max-width:550px;
+      max-width: 550px;
       margin: 0 auto 80px auto;
     }
     .btn-cta {
-      background-color:#cc0000;
-      color:#FFF;
+      background-color: #cc0000;
+      color: #FFF;
       padding: 15px 30px;
       border-radius: 4px;
       font-weight: bold;
@@ -78,7 +73,10 @@
     .btn-cta:hover {
       opacity: 0.8;
     }
-
+    /* Classe supplémentaire pour réduire la hauteur du bouton « Consulter » */
+    .btn-consulter {
+      padding: 10px 30px;
+    }
     /* -------- SECTION -------- */
     section {
       max-width: 1000px;
@@ -89,48 +87,41 @@
       font-size: 2rem;
       margin-bottom: 40px;
       color: #cc0000;
-      text-align:center;
+      text-align: center;
     }
     section p {
       font-size: 1.2rem;
       margin-top: 70px;
     }
-     section subtitle {
-      text-align:center;
+    /* Remplacement de <subtitle> par une classe */
+    .subtitle {
+      text-align: center;
       font-size: 2.2rem;
       font-weight: bold;
       margin-bottom: 100px;
       text-decoration: underline;
     }
-
-      /* -------- IMAGES -------- */
+    /* -------- IMAGES -------- */
     .img-centered {
       display: block;
-      margin-bottom: 100px; /* augmenté pour plus d'espace */
+      margin: 100px auto;
       max-width: 100%;
       border: 1px solid #ddd;
       border-radius: 4px;
     }
-
-    .img-centered {
-      display: block;
-      margin: 100px auto; /* augmenté pour plus d'espace */
-      max-width: 100%;
-      border: 1px solid #ddd;
-      border-radius: 4px;
+    /* Réduction de l'espacement pour les images dans la section témoignages */
+    .testimonials .img-centered {
+      margin: 20px auto;
     }
-    
     ol {
-  font-size: 1.8rem; /* Augmente la taille du texte */
-  list-style-position: inside; /* Rapproche le numéro du texte */
-  padding-left: 0; /* Supprime l’espace à gauche */
-}
-
+      font-size: 1.8rem;
+      list-style-position: inside;
+      padding-left: 0;
+    }
     ol li {
-  font-size: 1.8rem;
-  margin-bottom: 2px; /* Réduit l'espace entre les éléments */
-}
-
+      font-size: 1.8rem;
+      margin-bottom: 2px;
+    }
     /* -------- TESTIMONIALS / AVIS -------- */
     .testimonials {
       background-color: #000;
@@ -152,8 +143,7 @@
       margin-bottom: 5px;
       color: #fff;
     }
-
-      /* -------- FAQ (ajouté) -------- */
+    /* -------- FAQ -------- */
     .faq-item {
       background-color: #1a1a1a; 
       border-radius: 4px;
@@ -163,12 +153,11 @@
     .faq-item h3 {
       font-size: 1.1rem;
       margin-bottom: 10px;
-      color: #fff; /* par exemple un jaune pour contraster */
+      color: #fff;
     }
     .faq-item p {
       margin-bottom: 10px;
     }
-
     /* -------- PURCHASE / CTA -------- */
     .purchase-section {
       text-align: center;
@@ -179,14 +168,14 @@
       border-radius: 4px;
     }
     .purchase-section h2 {
-      margin-bottom:20px;
+      margin-bottom: 20px;
     }
     .purchase-section p {
       margin-bottom: 20px;
       color: #FFF;
     }
     .purchase-section .btn-pay {
-      background-color: #0070ba; /* Couleur PayPal */
+      background-color: #0070ba;
       color: #FFF;
       padding: 15px 10px;
       border-radius: 4px;
@@ -198,7 +187,6 @@
     .purchase-section .btn-pay:hover {
       background-color: #005d94;
     }
-
     /* -------- FOOTER -------- */
     footer {
       background-color: #333;
@@ -206,12 +194,11 @@
       text-align: center;
       padding: 10px;
       margin-top: 5px;
-      margin-bottom: 5px
+      margin-bottom: 5px;
     }
     footer p {
       font-size: 0.9rem;
     }
-
     /* -------- MEDIA QUERIES (Mobile) -------- */
     @media (max-width: 768px) {
       header h1 {
@@ -221,89 +208,79 @@
   </style>
 </head>
 <body>
-
-  
   <!-- HERO -->
   <header>
-  <div class="logo">Alvites Trading</div> <!-- Ajout du texte -->
-  <h1>Investis au bon moment sans être un professionnel des marchés</h1>
-  <p>Avec les outils ALVITES, profites de signaux clairs te permettant de saisir les meilleures opportunités sans avoir à passer des <strong>heures devant tes écrans</strong></p>
-  <a href="#purchase" class="btn-cta">Commencer maintenant</a>
-</header>
-
+    <div class="logo">Alvites Trading</div>
+    <h1>Investis au bon moment sans être un professionnel des marchés</h1>
+    <p>Avec les outils ALVITES, profites de signaux clairs te permettant de saisir les meilleures opportunités sans avoir à passer des <strong>heures devant tes écrans</strong></p>
+    <a href="#purchase" class="btn-cta">Commencer maintenant</a>
+  </header>
+  
   <!-- SECTION : Explications, captures de gains -->
-  <section subtitle>
-  <subtitle>Avant</subtitle> <p>Je passais 2 heures par jour à analyser de mauvais investissements le tout bien-sûr en achetant n'importe quand et dans un fouilli d'indicateurs contradictoires et retardés</p>
-
+  <section>
+    <div class="subtitle">Avant</div>
+    <p>Je passais 2 heures par jour à analyser de mauvais investissements le tout bien-sûr en achetant n'importe quand et dans un fouillis d'indicateurs contradictoires et retardés</p>
     <img 
       src="bok.png" 
       alt="Exemples de configurations TheStrat" 
       class="img-centered"
     >
-
-    <subtitle>Maintenant</subtitle> <p>Quelques minutes par jour me suffisent, je ne trade que des actifs de qualité et uniquement à des moments pertinents grâce à ces trois outils:</p>
-     <p></p>
-      <li>style="font-size:20px"<strong>ALVITES</strong> qui t'indique de façon claire s'il est judicieux d'investir ton argent</li>
-      <p></p>
+    <div class="subtitle">Maintenant</div>
+    <p>Quelques minutes par jour me suffisent, je ne trade que des actifs de qualité et uniquement à des moments pertinents grâce à ces trois outils:</p>
+    <ul>
+      <li style="font-size:20px"><strong>ALVITES</strong> qui t'indique de façon claire s'il est judicieux d'investir ton argent</li>
       <li><strong>OPTI</strong> qui te donne des fenêtres d'achats très précises à ne pas rater</li>
-      <p></p>
       <li><strong>SUPPORT</strong> qui affiche les supports proches les plus solides pour maximiser tes gains</li>
-      <p></p>
-
+    </ul>
     <img 
       src="Capture d’écran 2025-01-14 174848.png" 
       alt="Exemples de configurations TheStrat" 
       class="img-centered"
-/>
-
-   <img 
+    >
+    <img 
       src="opp.png" 
       alt="Exemples de configurations TheStrat" 
       class="img-centered"
-    />
-  
-      <!-- BOUTON POUR LE MODE D'EMPLOI -->
- <section style="text-align:center; margin-bottom:40px;">
-   
-    <p>Si tu veux en savoir plus...</p>
-    <a 
-      href="https://alvitestrading.github.io/indicators/Présentation.pdf" 
-      target="_blank" 
-      rel="noopener" 
-      class="btn-cta" 
-      style="text-transform:none;"
     >
-      <p></p>
-      Consulter
-    </a>
+    <!-- BOUTON POUR LE MODE D'EMPLOI -->
+    <section style="text-align:center; margin-bottom:40px;">
+      <p>Si tu veux en savoir plus...</p>
+      <a 
+        href="https://alvitestrading.github.io/indicators/Présentation.pdf" 
+        target="_blank" 
+        rel="noopener" 
+        class="btn-cta btn-consulter" 
+        style="text-transform:none;"
+      >
+        Consulter
+      </a>
+    </section>
   </section>
 
   <!-- SECTION : Témoignages / Retours Clients -->
   <section class="testimonials">
-<p></p>
     <h2>Ils ont choisi la solution Alvites</h2>
-
     <div class="testimonial-item">
       <img 
         src="dfb.png" 
         alt="Exemples de configurations TheStrat" 
         class="img-centered"
       >
-
+    </div>
     <div class="testimonial-item">
       <img 
         src="Capture d’écran 2024-10-19 111431.png" 
         alt="Exemples de configurations TheStrat" 
         class="img-centered"
       >
-
+    </div>
     <div class="testimonial-item">
       <img 
         src="Capture d’écran 2024-10-19 111220.png" 
         alt="Exemples de configurations TheStrat" 
         class="img-centered"
       >
-
+    </div>
     <div class="testimonial-item">
       <img 
         src="tém1.png" 
@@ -313,61 +290,51 @@
     </div>
   </section>
 
-
   <!-- SECTION : Paiement / CTA Final -->
   <section class="purchase-section" id="purchase">
-    <h2>Plus besoin de gaspiller des heures devant les écrans pour passer à l'action&nbsp;🕒 = 💰</h2>
+    <h2>Plus besoin de gaspiller des heures devant les écrans pour passer à l'action 🕒 = 💰</h2>
     <p>
       Reçois immédiatement la solution ALVITES sur ta plateforme préférée
     </p>
     <!-- Lien PayPal -->
     <script src="https://www.paypal.com/sdk/js?client-id=BAAdJQlDWqHWic1E4p0YrJVEcWTq3VkUb9poiQ97-2EAiDUBH_9mmCwCXBq_ecRmH8fIhXvWjJvVFaFuAQ&components=hosted-buttons&disable-funding=venmo&currency=EUR"></script>
-    
     <!-- On centre le conteneur PayPal -->
     <div id="paypal-container-H9NG4LE9SGSSW" style="display:inline-block;"></div>
-    
     <script>
       paypal.HostedButtons({
         hostedButtonId: "H9NG4LE9SGSSW",
       }).render("#paypal-container-H9NG4LE9SGSSW")
     </script>
-
     <p>À tout de suite de l’autre côté, hâte de te voir arriver parmi nous !</p>
     <p>(Contacte-moi directement sur X pour récupérer tes indicateurs et pour intégrer le groupe discord)</p>
   </section>
 
-   <!-- SECTION : FAQ -->
+  <!-- SECTION : FAQ -->
   <section>
     <h2>FAQ</h2>
-
     <div class="faq-item">
-      <h3>1. Sur quelles plateformes les indicateurs sont-ils disponibles&nbsp;?</h3>
+      <h3>1. Sur quelles plateformes les indicateurs sont-ils disponibles ?</h3>
       <p>
         Ils ont été développés sur la plateforme de trading <strong>Pro Real Time</strong> et sur <strong>Trading View</strong>
       </p>
     </div>
-
     <div class="faq-item">
-      <h3>2. Est-ce adapté aux débutants&nbsp;?</h3>
+      <h3>2. Est-ce adapté aux débutants ?</h3>
       <p>
         Oui, justement ces outils ont été spécialement conçus pour être les plus efficaces et les plus simples d'utilisation possible.
         Tu pourras également poser tes questions sur un groupe Discord dédié où tu rencontreras d'autres passionnés comme toi.
       </p>
     </div>
-
     <div class="faq-item">
-      <h3>3. Quels sont les marchés couverts&nbsp;?</h3>
+      <h3>3. Quels sont les marchés couverts ?</h3>
       <p>
-        La solution ALVITES est compatible sur la quasi-totalité des marchés
-        (actions, crypto, indices, ETF).
+        La solution ALVITES est compatible sur la quasi-totalité des marchés (actions, crypto, indices, ETF).
       </p>
     </div>
-
     <div class="faq-item">
-      <h3>4. Les indicateurs sont-ils utilisables en intraday&nbsp;?</h3>
+      <h3>4. Les indicateurs sont-ils utilisables en intraday ?</h3>
       <p>
-        Non. Le but étant de passer le moins de temps possible devant les écrans, 
-        ils sont donc à utiliser sur des unités de temps journalière et hebdomadaire.
+        Non. Le but étant de passer le moins de temps possible devant les écrans, ils sont donc à utiliser sur des unités de temps journalière et hebdomadaire.
       </p>
     </div>
   </section>
