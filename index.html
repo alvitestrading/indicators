@@ -234,25 +234,67 @@
       transition: 0.3s ease;
       display: inline-block;
     }
-/* Centrage du bouton PayPal sur desktop */
+/* Assurer le centrage du bouton PayPal */
 #paypal-container-H9NG4LE9SGSSW {
   display: flex;
-  justify-content: center; /* Centre le bouton horizontalement */
+  justify-content: center; /* Centre horizontalement */
   align-items: center; /* Assure un bon alignement vertical */
-  width: 100%; /* Le conteneur prend toute la largeur */
+  width: 100%; /* Prend toute la largeur */
   margin: 0 auto; /* Centre le conteneur */
 }
 
-/* Ajustement pour la section de paiement */
+/* Centrage global des éléments de la section */
 .purchase-section {
-  text-align: center; /* Centre tous les éléments de la section */
+  text-align: center; /* Centre tout le contenu de la section */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre les éléments enfants */
+  justify-content: center;
 }
 
-/* Ajustement pour éviter les débordements sur mobile */
-@media (max-width: 768px) {
+/* Vérification pour éviter tout décalage */
+.purchase-section script {
+  display: flex;
+  justify-content: center;
+}
+
+/* Ajustement pour éviter les débordements */
+@media (min-width: 769px) {
   #paypal-container-H9NG4LE9SGSSW {
-    width: 100%; /* Assure un bon ajustement sur mobile */
+    max-width: 600px; /* Limite la largeur pour éviter les décalages */
   }
+}
+/* Assurer le centrage du bouton PayPal */
+#paypal-container-H9NG4LE9SGSSW {
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Assure un bon alignement vertical */
+  width: 100%; /* Prend toute la largeur */
+  margin: 0 auto; /* Centre le conteneur */
+}
+
+/* Centrage global des éléments de la section */
+.purchase-section {
+  text-align: center; /* Centre tout le contenu de la section */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre les éléments enfants */
+  justify-content: center;
+}
+
+/* Vérification pour éviter tout décalage */
+.purchase-section script {
+  display: flex;
+  justify-content: center;
+}
+
+/* Ajustement pour éviter les débordements */
+@media (min-width: 769px) {
+  #paypal-container-H9NG4LE9SGSSW {
+    max-width: 600px; /* Limite la largeur pour éviter les décalages */
+  }
+}
+
     .purchase-section .btn-pay:hover {
       background-color: #005d94;
     }
@@ -332,7 +374,7 @@
     <div class="text-content">
       <h2><strong>Maximise ton temps</strong></h2>
       <p>
-        Finies les longues heures d'analyse sur des indicateurs complexes et retardés: Reste focus sur l'essentiel et gagne du temps au quotidien !
+        Finies les longues heures d'analyse sur des indicateurs complexes et retardés !
       </p>
     </div>
     <div class="image-content">
