@@ -81,6 +81,38 @@
       opacity: 0.8;
     }
 
+    /* -------- SECTION AVEC TEXTE ET IMAGE -------- */
+    .content-section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 10px;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 40px;
+      gap: 40px;
+    }
+
+    .text-content {
+      width: 50%;
+      text-align: left;
+      font-size: 1.2rem;
+    }
+
+    .image-content {
+      width: 50%;
+      text-align: right;
+    }
+
+    .image-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
     /* -------- PURCHASE / CTA -------- */
     .purchase-section {
       text-align: center;
@@ -94,15 +126,7 @@
       align-items: center;
       justify-content: center;
     }
-    .purchase-section h2 {
-      font-size: 2.2rem;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-    .purchase-section p {
-      margin-bottom: 20px;
-    }
-    
+
     /* Centrage du bouton PayPal */
     #paypal-container-H9NG4LE9SGSSW {
       display: flex;
@@ -119,31 +143,19 @@
         font-size: 2rem;
       }
 
-      section h2 {
-        font-size: 1.8rem;
+      .container {
+        flex-direction: column;
+        text-align: center;
       }
 
-      .text-content {
+      .text-content, .image-content {
         width: 100%;
         text-align: center;
-        margin-right: 0;
-      }
-
-      .image-content {
-        text-align: center;
-        margin-left: 0;
-        width: 100%;
       }
 
       .image-content img {
         max-width: 90%;
-        height: auto;
-        display: block;
         margin: 0 auto;
-      }
-
-      #paypal-container-H9NG4LE9SGSSW {
-        width: 100%;
       }
     }
   </style>
@@ -159,14 +171,37 @@
     <a href="#purchase" class="btn-cta">Commencer maintenant</a>
   </header>
 
+  <!-- SECTION AVEC TEXTE & IMAGE -->
+  <section class="content-section">
+    <div class="container">
+      <div class="text-content">
+        <h2><strong>Maximise ton temps</strong></h2>
+        <p>Finies les longues heures d'analyse sur des indicateurs complexes et retardés !</p>
+      </div>
+      <div class="image-content">
+        <img src="bok.png" alt="Exemple graphique">
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="text-content">
+        <h2><strong>Passe à l'action avec confiance</strong></h2>
+        <p>Prends en main des outils de visualisation intuitifs, clairs et repère immédiatement les actifs les plus prometteurs.</p>
+      </div>
+      <div class="image-content">
+        <img src="ethu.png" alt="Exemple graphique">
+      </div>
+    </div>
+  </section>
+
   <!-- SECTION : Paiement / CTA Final -->
   <section class="purchase-section" id="purchase">
     <h2>Une offre unique pour rêver plus grand&nbsp;🕒 = 💰</h2>
     <p>Reçois immédiatement tes indicateurs sur ta plateforme préférée</p>
-    
+
     <!-- Lien PayPal -->
     <script src="https://www.paypal.com/sdk/js?client-id=BAAdJQlDWqHWic1E4p0YrJVEcWTq3VkUb9poiQ97-2EAiDUBH_9mmCwCXBq_ecRmH8fIhXvWjJvVFaFuAQ&components=hosted-buttons&disable-funding=venmo&currency=EUR"></script>
-
+    
     <div id="paypal-container-H9NG4LE9SGSSW"></div>
 
     <script>
@@ -176,7 +211,14 @@
     </script>
 
     <p>À tout de suite de l’autre côté, hâte de te voir arriver parmi nous !</p>
-    <p>(Contacte-moi directement sur X pour récupérer tes indicateurs et pour intégrer le groupe discord)</p>
+  </section>
+
+  <!-- SECTION : Témoignages -->
+  <section class="testimonials">
+    <h2>Ils ont choisi de passer au stade supérieur...</h2>
+    <div class="testimonial-item"><img src="dfb.png" alt="Témoignage" class="img-centered"></div>
+    <div class="testimonial-item"><img src="Capture1.png" alt="Témoignage" class="img-centered"></div>
+    <div class="testimonial-item"><img src="Capture2.png" alt="Témoignage" class="img-centered"></div>
   </section>
 
   <!-- FOOTER -->
