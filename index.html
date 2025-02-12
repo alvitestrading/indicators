@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-79R1LDSQXD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-79R1LDSQXD');
+</script>
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ALVITES INVEST - Road to Success</title>
-  
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-79R1LDSQXD"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-79R1LDSQXD');
-  </script>
-
   <style>
     /* -------- RESET SIMPLE -------- */
     * {
@@ -33,20 +33,19 @@
       color: inherit;
       text-decoration: none;
     }
-
-    .logo {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      font-size: 1rem;
-      opacity: 0.9;
-      color: #FFFFFF;
-      letter-spacing: 2px;
-    }
+  .logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 1rem;
+  opacity: 0.9;
+  color: #FFFFFF; /* Texte blanc */
+  letter-spacing: 2px;
+}
 
     /* -------- HEADER / HERO -------- */
     header {
-      background: #000000;
+      background: #000000; /* Couleur de fond du "Hero" */
       color: #FFFFFF;
       padding: 60px 20px;
       text-align: center;
@@ -54,7 +53,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      height: 100vh; /* Prend toute la hauteur de l'écran */
     }
     header h1 {
       font-size: 2.9rem;
@@ -64,7 +63,7 @@
     }
     header p {
       font-size: 1.2rem;
-      max-width: 550px;
+      max-width:550px;
       margin: 0 auto 80px auto;
     }
     .btn-cta {
@@ -80,37 +79,132 @@
     .btn-cta:hover {
       opacity: 0.8;
     }
-
-    /* -------- SECTION AVEC TEXTE ET IMAGE -------- */
-    .content-section {
+    /* -------- SECTION -------- */
+    section {
       max-width: 1000px;
-      margin: 60px auto;
-      padding: 10px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
-
-    .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    section h2 {
+      font-size: 2rem;
       margin-bottom: 40px;
-      gap: 40px;
+      color: #fff;
+      text-align: center
+    }
+    section p {
+      margin-bottom: 40px;
+    }
+    .section-subtitle {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
     }
 
-    .text-content {
-      width: 50%;
-      text-align: left;
-      font-size: 1.2rem;
-    }
-
-    .image-content {
-      width: 50%;
-      text-align: right;
-    }
-
-    .image-content img {
+    /* -------- IMAGES -------- */
+    .img-centered {
+      display: block;
+      margin: 20px auto; /* augmenté pour plus dpace */
       max-width: 100%;
-      height: auto;
-      border-radius: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    .img-centered {
+      display: block;
+      margin: 20px auto; /* augmenté pour plus d'espace */
+      max-width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    
+/* -------- SECTION AVEC TEXTE ET IMAGE EN COLONNES -------- */
+.content-section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  align-items: center;            /* Aligne verticalement */
+  justify-content: space-between;                     /* Espace entre les colonnes */
+  margin-bottom: 40px;            /* Sépare les différentes lignes de contenu */
+}
+
+.text-content {
+ width: 65%;                /* Limite la largeur à 50% */
+ text-align: left;
+ margin-right: 160px;
+ font-size: 1.2rem
+}
+
+.text-content h2 {
+ text-align: left;
+ font-size: 2.5rem;         /* ajustez cette valeur selon vos préférences */
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.image-content {
+  width: 80%;              /* occupe environ 45% du conteneur */
+  text-align: right; 
+  margin-left: 175px;
+}
+
+.image-content img {
+  max-width: 165%;                /* L'image ne dépasse pas son conteneur */
+  height: auto;                   /* Conserve ses proportions */
+  border-radius: 8px;
+}
+
+/* -------- RESPONSIVE (adaptation mobile) -------- */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .text-content,
+  .image-content {
+    max-width: 100%;
+  }
+}
+    /* -------- TESTIMONIALS / AVIS -------- */
+    .testimonials {
+      background-color: #000;
+      color: #fff;
+      border-radius: 4px;
+      padding: 5px;
+      margin-top: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .testimonial-item {
+      background: #000;
+      margin-bottom: 5px;
+      padding: 5px;
+      border-radius: 5px;
+      font-style: italic;
+    }
+    .testimonial-item strong {
+      display: inline-block;
+      margin-bottom: 5px;
+      color: #fff;
+    }
+
+    /* -------- FAQ (ajouté) -------- */
+    .faq-item {
+      background-color: #1a1a1a; 
+      border-radius: 4px;
+      padding: 15px;
+      margin-bottom: 10px;
+    }
+    .faq-item h3 {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      color: #fff; /* par exemple un jaune pour contraster */
+    }
+    .faq-item p {
+      margin-bottom: 10px;
     }
 
     /* -------- PURCHASE / CTA -------- */
@@ -121,110 +215,226 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       margin-bottom: 10px;
       border-radius: 4px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+    }
+    .purchase-section h2 {
+      font-size: 2.2rem; /* Augmente la taille du texte */
+      font-weight: bold; /* Met en gras pour plus d'impact */
+      margin-bottom: 20px;
+    }
+    .purchase-section p {
+      margin-bottom: 20px;
+    }
+    .purchase-section .btn-pay {
+      background-color: #0070ba; /* Couleur PayPal */
+      color: #FFF;
+      padding: 15px 10px;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+      display: inline-block;
+    }
+    .purchase-section .btn-pay:hover {
+      background-color: #005d94;
     }
 
-    /* Centrage du bouton PayPal */
-    #paypal-container-H9NG4LE9SGSSW {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      max-width: 400px;
-      margin: 0 auto;
+    /* -------- FOOTER -------- */
+    footer {
+      background-color: #333;
+      color: #ccc;
+      text-align: center;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 5px
+    }
+    footer p {
+      font-size: 0.9rem;
     }
 
-    /* Responsive : Ajustements pour mobile */
+    /* -------- MEDIA QUERIES (Mobile) -------- */
     @media (max-width: 768px) {
-      header h1 {
-        font-size: 2rem;
-      }
+     header h1 {
+    font-size: 2rem; /* Réduit le titre principal sur mobile */
+  }
 
-      .container {
-        flex-direction: column;
-        text-align: center;
-      }
+  section h2 {
+    font-size: 1.8rem; /* Ajuste les titres pour qu'ils ne soient pas trop grands */
+  }
 
-      .text-content, .image-content {
-        width: 100%;
-        text-align: center;
-      }
+  .text-content {
+    width: 100%; /* Évite que le texte soit trop étroit */
+    text-align: center; /* Centre le texte sur mobile */
+    margin-right: 0; /* Supprime la marge excessive */
+  }
 
-      .image-content img {
-        max-width: 90%;
-        margin: 0 auto;
-      }
-    }
+  .image-content {
+    text-align: center; /* Centre l’image sous le texte */
+    margin-left: 0; /* Supprime la marge qui pousse l'image à droite */
+    width: 100%; /* Assure que le conteneur occupe toute la largeur */
+  }
+
+  .image-content img {
+    max-width: 90%; /* Ajuste la taille des images pour qu'elles ne débordent pas */
+    height: auto;
+    display: block; /* Évite les espaces blancs sous l'image */
+    margin: 0 auto; /* Centre l'image horizontalement */
+  }}
+    #paypal-container-H9NG4LE9SGSSW {
+    display: flex; /* Permet un centrage propre */
+    justify-content: center; /* Centre horizontalement */
+    width: 100%; /* Assure que le conteneur s’adapte à l’écran */
+  }
+
+  .purchase-section script {
+    max-width: 90%; /* Réduit la largeur max du bouton */
+  }
+
+  .purchase-section p {
+    text-align: center; /* Assure que tout est bien centré */
+  }
+}
   </style>
 </head>
-
 <body>
 
   <!-- HERO -->
   <header>
-    <div class="logo">Alvites Trading</div>
-    <h1>Investis au bon moment sans être un professionnel des marchés</h1>
-    <p>Avec les outils ALVITES, profites de signaux clairs te permettant de saisir les meilleures opportunités sans avoir à passer des <strong>heures devant tes écrans</strong></p>
-    <a href="#purchase" class="btn-cta">Commencer maintenant</a>
-  </header>
+  <div class="logo">Alvites Trading</div> <!-- Ajout du texte -->
+  <h1>Investis au bon moment sans être un professionnel des marchés</h1>
+  <p>Avec les outils ALVITES, profites de signaux clairs te permettant de saisir les meilleures opportunités sans avoir à passer des <strong>heures devant tes écrans</strong></p>
+  <a href="#purchase" class="btn-cta">Commencer maintenant</a>
+</header>
 
-  <!-- SECTION AVEC TEXTE & IMAGE -->
-  <section class="content-section">
-    <div class="container">
-      <div class="text-content">
-        <h2><strong>Maximise ton temps</strong></h2>
-        <p>Finies les longues heures d'analyse sur des indicateurs complexes et retardés !</p>
-      </div>
-      <div class="image-content">
-        <img src="bok.png" alt="Exemple graphique">
-      </div>
-    </div>
 
-    <div class="container">
-      <div class="text-content">
-        <h2><strong>Passe à l'action avec confiance</strong></h2>
-        <p>Prends en main des outils de visualisation intuitifs, clairs et repère immédiatement les actifs les plus prometteurs.</p>
-      </div>
-      <div class="image-content">
-        <img src="ethu.png" alt="Exemple graphique">
-      </div>
+  <!--------- SECTION AVEC TEXTE ET IMAGE EN COLONNES ---------->
+<section class="content-section">
+  <!-- Ligne pour "AVANT" -->
+  <div class="container">
+    <div class="text-content">
+      <h2><strong>Maximise ton temps</strong></h2>
+      <p>
+        Finies les longues heures d'analyse sur des indicateurs complexes et retardés: Reste focus sur l'essentiel et gagne du temps au quotidien !
+      </p>
     </div>
+    <div class="image-content">
+      <img src="bok.png" alt="Exemples de configurations TheStrat">
+    </div>
+  </div>
+
+  <!-- Ligne pour "MAINTENANT" -->
+  <div class="container">
+    <div class="text-content">
+      <h2><strong>Passe à l'action avec confiance</strong></h2>
+      <p>
+        Prends en main des outils de visualisation intuitifs, clairs et repère immédiatement les actifs les plus prometteurs.
+        Tu n’as plus qu’à placer tes entrées et faire exploser tes gains.
+      </p>
+    </div>
+    <div class="image-content">
+      <img src="ethu.png" alt="Exemples de configurations TheStrat">
+    </div>
+  </div>
+</section>
+  
+      <!-- BOUTON POUR LE MODE D'EMPLOI -->
+ <section style="text-align:center;font-size: 1.2rem; margin-bottom:40px;">
+   
+    <p>Si tu souhaites plus de détails sur le fonctionnement des indicateurs</p>
+    <a 
+      href="https://alvitestrading.github.io/indicators/Présentation.pdf" 
+      target="_blank" 
+      rel="noopener" 
+      class="btn-cta" 
+      style="text-transform:none;"
+    >
+      Consulter
+    </a>
   </section>
+
+ <!-- SECTION : Témoignages / Retours Clients -->
+<section class="testimonials">
+  <h2>Ils ont choisi de passer au stade supérieur...</h2>
+
+  <div class="testimonial-item">
+    <img src="dfb.png" alt="Exemples de configurations TheStrat" class="img-centered">
+  </div>
+
+  <div class="testimonial-item">
+    <img src="Capture d’écran 2024-10-19 111431.png" alt="Exemples de configurations TheStrat" class="img-centered">
+  </div>
+
+  <div class="testimonial-item">
+    <img src="Capture d’écran 2024-10-19 111220.png" alt="Exemples de configurations TheStrat" class="img-centered">
+  </div>
+
+  <div class="testimonial-item">
+    <img src="tém1.png" alt="Exemples de configurations TheStrat" class="img-centered">
+  </div>
+</section>
+
+
 
   <!-- SECTION : Paiement / CTA Final -->
   <section class="purchase-section" id="purchase">
     <h2>Une offre unique pour rêver plus grand&nbsp;🕒 = 💰</h2>
-    <p>Reçois immédiatement tes indicateurs sur ta plateforme préférée</p>
-
+    <p>
+      Reçois immédiatement tes indicateurs sur ta plateforme préférée
+    </p>
     <!-- Lien PayPal -->
     <script src="https://www.paypal.com/sdk/js?client-id=BAAdJQlDWqHWic1E4p0YrJVEcWTq3VkUb9poiQ97-2EAiDUBH_9mmCwCXBq_ecRmH8fIhXvWjJvVFaFuAQ&components=hosted-buttons&disable-funding=venmo&currency=EUR"></script>
     
-    <div id="paypal-container-H9NG4LE9SGSSW"></div>
-
+    <!-- On centre le conteneur PayPal -->
+    <div id="paypal-container-H9NG4LE9SGSSW" style="display:inline-block;"></div>
+    
     <script>
       paypal.HostedButtons({
         hostedButtonId: "H9NG4LE9SGSSW",
-      }).render("#paypal-container-H9NG4LE9SGSSW");
+      }).render("#paypal-container-H9NG4LE9SGSSW")
     </script>
 
     <p>À tout de suite de l’autre côté, hâte de te voir arriver parmi nous !</p>
+    <p>(Contacte-moi directement sur X pour récupérer tes indicateurs et pour intégrer le groupe discord)</p>
   </section>
 
-  <!-- SECTION : Témoignages -->
-  <section class="testimonials">
-    <h2>Ils ont choisi de passer au stade supérieur...</h2>
-    <div class="testimonial-item"><img src="dfb.png" alt="Témoignage" class="img-centered"></div>
-    <div class="testimonial-item"><img src="Capture1.png" alt="Témoignage" class="img-centered"></div>
-    <div class="testimonial-item"><img src="Capture2.png" alt="Témoignage" class="img-centered"></div>
+        <!-- SECTION : FAQ -->
+  <section>
+    <h2>FAQ</h2>
+
+    <div class="faq-item">
+      <h3>1. Sur quelles plateformes les indicateurs sont-ils disponibles&nbsp;?</h3>
+      <p>
+        Ils ont été développés sur la plateforme de trading <strong>Pro Real Time</strong> et sur <strong>Trading View</strong>
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>2. Est-ce adapté aux débutants&nbsp;?</h3>
+      <p>
+        Oui, justement ces outils ont été spécialement conçus pour être les plus efficaces et les plus simples d'utilisation possible.
+        Tu pourras également poser tes questions sur un groupe Discord dédié où tu rencontreras d'autres passionnés comme toi.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>3. Quels sont les marchés couverts&nbsp;?</h3>
+      <p>
+        La solution ALVITES est compatible sur la quasi-totalité des marchés
+        (actions, crypto, indices, ETF).
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>4. Les indicateurs sont-ils utilisables en intraday&nbsp;?</h3>
+      <p>
+        Non. Le but étant de passer le moins de temps possible devant les écrans, 
+        ils sont donc à utiliser sur des unités de temps journalière et hebdomadaire.
+      </p>
+    </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
     <p>&copy; 2025 Alvites Trading. Tous droits réservés.</p>
   </footer>
-
 </body>
 </html>
