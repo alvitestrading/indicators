@@ -102,8 +102,13 @@
       text-decoration: underline;
     }
 
-    .tools-list {
-  text-align: center;
+   .tools-list {
+  display: inline-block;       /* La liste prend la largeur de son contenu */
+  margin: 0 auto;              /* Centre la liste dans son conteneur */
+  list-style-position: inside; /* Place les puces à l'intérieur du bloc */
+  text-align: center;          /* Centre le texte (et donc la puce si elle est "inside") */
+  padding: 0;                  /* Supprime la marge interne par défaut */
+
 }
 
     /* -------- IMAGES -------- */
