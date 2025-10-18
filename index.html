@@ -357,16 +357,17 @@
     <!-- On centre le conteneur PayPal -->
     <div class="paypal-wrapper">
   <div id="paypal-container-H9NG4LE9SGSSW">
-    {writing-mode: horizontal-tb !important;
-  white-space: nowrap !important;
-  letter-spacing: normal !important;
-  text-transform: none !important;
-}</div>
 </div>
     <script>
       paypal.HostedButtons(
         hostedButtonId: "H9NG4LE9SGSSW",
       }).render("#paypal-container-H9NG4LE9SGSSW")
+      #paypal-container-H9NG4LE9SGSSW * {
+  writing-mode: horizontal-tb !important;
+  white-space: nowrap !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+}
     </script>
     <p>À tout de suite de l’autre côté !</p>
     <p>(Contacte-moi directement sur X pour récupérer tes indicateurs. Si tu n'es intéréssé que par un seul indicateur, tu peux me contacter également)</p>
